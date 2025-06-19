@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;900&display=swap');
+
+:root {
+  font-family: 'Rubik', sans-serif;
+  --bg-dark: #242424;
+  --bg-card: #2c2c2c;
+  --text-light: #f1f1f1;
+  --border-color: #444;
+  --accent: #4caf50;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 900;
+}
+
+.enterIdDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  border-radius: 16px;
+  background-color: var(--bg-card);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  font-weight: 900;
+}
+
+.enterId {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--text-light);
+  font-weight: 900;
+}
+
+.enterIdDiv input {
+  width: 100%;
+  border: 2px solid var(--border-color);
+  background: #1a1a1a;
+  color: var(--text-light);
+  font-family: 'Rubik', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  text-align: end;
+  
+  transition: border-color 0.2s;
+}
+
+.enterIdDiv input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.enterIdDiv button {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--accent);
+  color: #fff;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-weight: 900;
+}
+
+.buttonBack {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--accent);
+  color: #fff;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-weight: 900;
+
+}
+
+.enterIdDiv button:hover {
+  background-color: #43a047;
+}
+
+.resultDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  border-radius: 16px;
+  background-color: var(--bg-card);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+.resultDiv h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-weight: 900;
+  color: var(--text-light);
+  padding-bottom: 40px;
+}
+.resultDiv p {
+  font-size: 1rem;
+  color: var(--text-light);
+  margin-block: -10px;
+}
+
+.resultDiv label {
+  font-size: 1rem;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+
+.resultDetails {
+  display: flex;
+  direction: rtl;
+  text-align: start;
+  flex-direction: column;
+}
+
+.hrLine {
+  min-width: 26vh;
+  height: 2px;
+  background-color: var(--text-light);
+  margin: 1.5rem 0;
+  opacity: 0.5;
+  border-radius: 1px;
+}
+
+.resultError {
+  text-align: end;
+  color: red;
+
+  background-color: #444;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.noteLine {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.bigAsterisk {
+  font-size: 2rem;
+  color: red;
+  vertical-align: middle;
+  margin-top: 5px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.noteText {
+  font-size: 1.2rem;
+  color: #333;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+.listMegamot {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  direction: rtl;
+}
+
+.subjectList {
+  padding-inline-start: 20px;
+  margin: 0;
+  list-style-type: disc;
+}
+
+.subjectItem {
+  font-size: 1.1rem;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+
